@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>Take From Stock</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        a {
+            color: black;
+            text-decoration: none; /* Remove underline from links */
+            padding: 10px; /* Add some spacing around the links */
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inventory Management System</h1>
+        <h2>Take From Stock</h2>
+    </header>
+    
+    <main>
+        <div>
+            <form action="TakeFromStockServlet" method="POST">
+                <label for="itemId">Item ID:</label>
+                <input type="number" id="itemId" name="itemId" required><br><br>
+                
+                <label for="empName">Employee Name:</label>
+                <input type="text" id="empName" name="empName" required><br><br>
+                
+                <label for="itemQuantity">How much quantity do you want to take:</label>
+                <input type="number" id="itemQuantity" name="itemQuantity" required><br><br>
+
+                <input type="submit" value="Take Stock">
+            </form>
+            <div><button><a href="index.html">Go to Menu</a></button></div>
+        </div>
+    </main>
+    
+    <footer>
+    </footer>
+</body>
+</html>
+
